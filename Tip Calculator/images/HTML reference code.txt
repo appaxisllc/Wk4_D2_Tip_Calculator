@@ -1,0 +1,54 @@
+    <!-- Reference -->
+    <!-- The form to enter data -->
+    <div id="fill-form">
+        <form>
+            <fieldset>
+                <label for="resturant">Resturant Name</label>
+                <input name="resturant" id="resturant"><br>
+                <!-- Guest Number -->
+                <label for="guest">Guest Number</label>
+                <input name="guest" id="guest"><br>
+
+                <!-- Bill item -->
+                <label for="item">Item Name</label>
+                <input name="item" id="item">
+                <label for="price">Price</label>
+                <input name="price" id="price">
+                <button id="add" onclick="pushItem()">Add</button><br>
+
+                <!--Tip % drop down -->
+                <label for="tip">Tip Percentage</label>
+                <select name="tip" id="tip"><br>
+                    <option value="15%">15%</option>
+                    <option value="18%">18%</option>
+                    <option value="20%">20%</option>
+
+                </select>
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- Bill Div  -->
+    <div id="invoice">
+        <p id="resturantP"></p>
+        <p>
+            <apan id="date"></apan>
+            <apan id="time"></apan>
+        </p>
+        <!-- main item list -->
+        <div>
+            <table id="list">
+
+            </table>
+        </div>
+        <!-- Bill Amount -->
+        <label for="amountSum">Bill Amount</label>
+        <label id="amountSum" name="amountSum"></label>
+        <!-- Tip -->
+        <label for="tipPer">guest Name</label>
+        <input id="tipPer" name="tipPer">
+        <!-- Bill amount -->
+        <label for="total">amount Name</label>
+        <input id="total" name="total">
+        <!-- Bill item -->
+    </div>

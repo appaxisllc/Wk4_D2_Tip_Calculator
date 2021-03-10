@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <!-- Add Google Fonts Here -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <!--Header  -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    Restaurant Tip Calculator
+                </h1>
+            </div>
+        </div>
+
+        <!-- Date and Time -->
+        <div class="row">
+            <div class="col-md-12">
+                <p id="displaydate">date</p>
+            </div>
+        </div>
+
+
+
+        <!-- Order Items  Header-->
+
+        <div class="row">
+            <div class="col">
+                <h3>
+                    Order
+                </h3>
+            </div>
+        </div>
+
+        <!-- Order Items List -->
+        <div class="row" class="Order Items List">
+            <div class="col">
+                <label id="billlabel">
+                    Price
+                </label>
+                <input id="billAmt" type="number">
+                <!-- <button id="add" onclick="pushItem()">Add</button><br> -->
+            </div>
+        </div>
+
+        <!-- Calculations Section -->
+        <div class="row">
+            <div class="col">
+                <h4>
+                    Amount
+                </h4>
+            </div>
+            <div class="col">
+                <output>
+
+                </output>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label id="numlabel">
+                    Guest Number
+                </label>
+                <input id="guest" type="number">
+                </input>
+                </br>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col">
+                <form>
+                    <label id="servicelabel">
+                        Tip Percentage
+                    </label>
+                    <select id="serviceQual">
+                        <!--Tip rates-->
+                        <option disabled selected value="0">Choose an option</option>
+                        <option value="0.2">Outstanding service-20%</option>
+                        <option value="0.18">Very Good service-18%</option>
+                        <option value="0.15">Needs Improvement -15%</option>
+                        <option value="0.1">Bad Service-10%</option>
+                        <option value="0.05">Terrible service- 5%</option>
+                    </select><br /><br />
+                    </select>
+                    <div id="child-container">
+                        <!--On clicking the button call java script-->
+                        <button type="button" onclick="calculate()">Calculate the Per Person Amount</button><br />
+                        <!--Display for tip and the total split-->
+                        <h2 id="tip">Total Tip: $0.00</h2>
+                        <h2 id="total">Total Due: $0.00</h2>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Javascript Link -->
+        <script src="index.js"></script>
+</body>
+
+</html>

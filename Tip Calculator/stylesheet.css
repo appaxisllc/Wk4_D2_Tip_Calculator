@@ -1,0 +1,27 @@
+body {
+    background-color: azure;
+}
+
+
+.container-fluid {
+    background-color: aquamarine;
+    padding: 5%;
+    border-radius: 10%;
+}
+
+
+
+.row {
+    align-content: center;
+}
+
+div {
+    padding: 5px;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Stick', sans-serif;
+    background-color: rgb(192, 237, 255);
+    text-align: center;
+}
